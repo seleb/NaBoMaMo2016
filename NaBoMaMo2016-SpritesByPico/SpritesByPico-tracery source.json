@@ -7,7 +7,7 @@
 	
 	"P8start":["\\[gfx\\]0808"],
 	"P8end":["\\[/gfx\\]"],
-	"SVGstart":["{svg <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"512\" height=\"512\"><g transform=\"scale(64)\">"],
+	"SVGstart":["{svg <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='512' height='512'><g transform='scale(64)'>"],
 	"SVGend":["</g></svg>}"],
 
 
@@ -15,15 +15,21 @@
 
 	"c":["#c1#","#c2#","P0"],
 
-	"origin": ["#[#setColours#][#setPixels#]main#"],
+	"origin": ["#[#setColours#][#setPixels#][#setLayouts#]main#"],
 
-	"main":["#P8.replace(P,)##SVG.replace(P0,000000).replace(P1,1D2B53).replace(P2,7E2553).replace(P3,008751).replace(P4,AB5236).replace(P5,5F574F).replace(P6,C2C3C7).replace(P7,FFF1E8).replace(P8,FF004D).replace(P9,FFA300).replace(Pa,FFEC27).replace(Pb,00E436).replace(Pc,29ADFF).replace(Pd,83769C).replace(Pe,FF77A8).replace(Pf,FFCCAA)#"],
-
-	"P8":["#P8start##00##01##02##03##03##02##01##00##10##11##12##13##13##12##11##10##20##21##22##23##23##22##21##20##30##31##32##33##33##32##31##30##40##41##42##43##43##42##41##40##50##51##52##53##53##52##51##50##60##61##62##63##63##62##61##60##70##71##72##73##73##72##71##70##P8end#"],
-
-	"SVG":["#SVGstart##[x:0][y:0][c:#00#]SVGp##[x:1][y:0][c:#01#]SVGp##[x:2][y:0][c:#02#]SVGp##[x:3][y:0][c:#03#]SVGp##[x:4][y:0][c:#03#]SVGp##[x:5][y:0][c:#02#]SVGp##[x:6][y:0][c:#01#]SVGp##[x:7][y:0][c:#00#]SVGp##[x:0][y:1][c:#10#]SVGp##[x:1][y:1][c:#11#]SVGp##[x:2][y:1][c:#12#]SVGp##[x:3][y:1][c:#13#]SVGp##[x:4][y:1][c:#13#]SVGp##[x:5][y:1][c:#12#]SVGp##[x:6][y:1][c:#11#]SVGp##[x:7][y:1][c:#10#]SVGp##[x:0][y:2][c:#20#]SVGp##[x:1][y:2][c:#21#]SVGp##[x:2][y:2][c:#22#]SVGp##[x:3][y:2][c:#23#]SVGp##[x:4][y:2][c:#23#]SVGp##[x:5][y:2][c:#22#]SVGp##[x:6][y:2][c:#21#]SVGp##[x:7][y:2][c:#20#]SVGp##[x:0][y:3][c:#30#]SVGp##[x:1][y:3][c:#31#]SVGp##[x:2][y:3][c:#32#]SVGp##[x:3][y:3][c:#33#]SVGp##[x:4][y:3][c:#33#]SVGp##[x:5][y:3][c:#32#]SVGp##[x:6][y:3][c:#31#]SVGp##[x:7][y:3][c:#30#]SVGp##[x:0][y:4][c:#40#]SVGp##[x:1][y:4][c:#41#]SVGp##[x:2][y:4][c:#42#]SVGp##[x:3][y:4][c:#43#]SVGp##[x:4][y:4][c:#43#]SVGp##[x:5][y:4][c:#42#]SVGp##[x:6][y:4][c:#41#]SVGp##[x:7][y:4][c:#40#]SVGp##[x:0][y:5][c:#50#]SVGp##[x:1][y:5][c:#51#]SVGp##[x:2][y:5][c:#52#]SVGp##[x:3][y:5][c:#53#]SVGp##[x:4][y:5][c:#53#]SVGp##[x:5][y:5][c:#52#]SVGp##[x:6][y:5][c:#51#]SVGp##[x:7][y:5][c:#50#]SVGp##[x:0][y:6][c:#60#]SVGp##[x:1][y:6][c:#61#]SVGp##[x:2][y:6][c:#62#]SVGp##[x:3][y:6][c:#63#]SVGp##[x:4][y:6][c:#63#]SVGp##[x:5][y:6][c:#62#]SVGp##[x:6][y:6][c:#61#]SVGp##[x:7][y:6][c:#60#]SVGp##[x:0][y:7][c:#70#]SVGp##[x:1][y:7][c:#71#]SVGp##[x:2][y:7][c:#72#]SVGp##[x:3][y:7][c:#73#]SVGp##[x:4][y:7][c:#73#]SVGp##[x:5][y:7][c:#72#]SVGp##[x:6][y:7][c:#71#]SVGp##[x:7][y:7][c:#70#]SVGp##SVGend#"],
+	"main":["#P8start##P8layout.replace(P,)##P8end##SVGstart##SVGlayout##SVGend#"],
+	
+	"setLayouts":[
+		"[P8layout:#P8layout1#][SVGlayout:#SVGlayout1#]"
+	],
+	
+	"P8layout1":["#00##01##02##03##03##02##01##00##10##11##12##13##13##12##11##10##20##21##22##23##23##22##21##20##30##31##32##33##33##32##31##30##40##41##42##43##43##42##41##40##50##51##52##53##53##52##51##50##60##61##62##63##63##62##61##60##70##71##72##73##73##72##71##70#"],
+	"SVGlayout1":["#[x:0][y:0][c:#00#]SVGp##[x:1][y:0][c:#01#]SVGp##[x:2][y:0][c:#02#]SVGp##[x:3][y:0][c:#03#]SVGp##[x:4][y:0][c:#03#]SVGp##[x:5][y:0][c:#02#]SVGp##[x:6][y:0][c:#01#]SVGp##[x:7][y:0][c:#00#]SVGp##[x:0][y:1][c:#10#]SVGp##[x:1][y:1][c:#11#]SVGp##[x:2][y:1][c:#12#]SVGp##[x:3][y:1][c:#13#]SVGp##[x:4][y:1][c:#13#]SVGp##[x:5][y:1][c:#12#]SVGp##[x:6][y:1][c:#11#]SVGp##[x:7][y:1][c:#10#]SVGp##[x:0][y:2][c:#20#]SVGp##[x:1][y:2][c:#21#]SVGp##[x:2][y:2][c:#22#]SVGp##[x:3][y:2][c:#23#]SVGp##[x:4][y:2][c:#23#]SVGp##[x:5][y:2][c:#22#]SVGp##[x:6][y:2][c:#21#]SVGp##[x:7][y:2][c:#20#]SVGp##[x:0][y:3][c:#30#]SVGp##[x:1][y:3][c:#31#]SVGp##[x:2][y:3][c:#32#]SVGp##[x:3][y:3][c:#33#]SVGp##[x:4][y:3][c:#33#]SVGp##[x:5][y:3][c:#32#]SVGp##[x:6][y:3][c:#31#]SVGp##[x:7][y:3][c:#30#]SVGp##[x:0][y:4][c:#40#]SVGp##[x:1][y:4][c:#41#]SVGp##[x:2][y:4][c:#42#]SVGp##[x:3][y:4][c:#43#]SVGp##[x:4][y:4][c:#43#]SVGp##[x:5][y:4][c:#42#]SVGp##[x:6][y:4][c:#41#]SVGp##[x:7][y:4][c:#40#]SVGp##[x:0][y:5][c:#50#]SVGp##[x:1][y:5][c:#51#]SVGp##[x:2][y:5][c:#52#]SVGp##[x:3][y:5][c:#53#]SVGp##[x:4][y:5][c:#53#]SVGp##[x:5][y:5][c:#52#]SVGp##[x:6][y:5][c:#51#]SVGp##[x:7][y:5][c:#50#]SVGp##[x:0][y:6][c:#60#]SVGp##[x:1][y:6][c:#61#]SVGp##[x:2][y:6][c:#62#]SVGp##[x:3][y:6][c:#63#]SVGp##[x:4][y:6][c:#63#]SVGp##[x:5][y:6][c:#62#]SVGp##[x:6][y:6][c:#61#]SVGp##[x:7][y:6][c:#60#]SVGp##[x:0][y:7][c:#70#]SVGp##[x:1][y:7][c:#71#]SVGp##[x:2][y:7][c:#72#]SVGp##[x:3][y:7][c:#73#]SVGp##[x:4][y:7][c:#73#]SVGp##[x:5][y:7][c:#72#]SVGp##[x:6][y:7][c:#71#]SVGp##[x:7][y:7][c:#70#]SVGp#"],
 
 	"SVGp":[
-		"<rect x=\"#x#\" y=\"#y#\" style=\"fill:\\##c#\" width=\"1\" height=\"1\"/>"
-	]
+		"<rect x='#x#' y='#y#' style='fill: #hash-escape-wrapper##SVGc#' width='1' height='1'/>"
+	],
+	"hash-escape-wrapper":["#hash-escape#hash-escape#hash-escape#"],
+	"hash-escape":["\\#"],
+	"SVGc":["#c.replace(P0,000000).replace(P1,1D2B53).replace(P2,7E2553).replace(P3,008751).replace(P4,AB5236).replace(P5,5F574F).replace(P6,C2C3C7).replace(P7,FFF1E8).replace(P8,FF004D).replace(P9,FFA300).replace(Pa,FFEC27).replace(Pb,00E436).replace(Pc,29ADFF).replace(Pd,83769C).replace(Pe,FF77A8).replace(Pf,FFCCAA)#"]
 }
