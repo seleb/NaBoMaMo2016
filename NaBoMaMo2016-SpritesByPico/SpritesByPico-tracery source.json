@@ -1,10 +1,11 @@
 {
 	"colour":["P1","P2","P3","P4","P5","P6","P7","P8","P9","Pa","Pb","Pc","Pd","Pe","Pf"],
 	"setColours":[
-		"[c1:#colour#][c2:#colour#]",
-		"[c1:#colour#][c2:#c1#]"
 		"[c1:#colour#][c2:#colour#][c3:#colour#]",
 		"[c1:#colour#][c2:#colour#][c3:#c2#]",
+		"[c1:#colour#][c2:#colour#][c3:#c1#]",
+		"[c1:#colour#][c2:#c1#][c3:#c2#]",
+		"[c1:#colour#][c2:#c1#][c3:#c2#]",
 		"[c1:#colour#][c2:#c1#][c3:#c2#]"
 	],
 	
