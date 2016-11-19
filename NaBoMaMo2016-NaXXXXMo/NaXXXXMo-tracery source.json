@@ -1,0 +1,44 @@
+{
+	"origin": [
+		"#main#","#main# #signoff#"
+	],
+	"main": [
+		"I'm looking forward to #hashtag##punc#",
+		"#hey#, anyone else planning on doing #hashtag#?",
+		"#hashtag#'s going to be great this year#punc#",
+		"Anyone heard of #hashtag#?",
+		"Anyone doing #hashtag#?",
+		"What's the deal with #hashtag#?",
+		"#hey#, who's up for #hashtag#?#exc#",
+		"Working on my #hashtag# project#exc#",
+		"#hashtag# project is looking up#exc#",
+		"Any progress on #hashtag#?",
+		"Am I the only one doing #hashtag#?",
+		"Doing #hashtag##exc#"
+	],
+	"signoff":[
+		"It'll be #good##punc#",
+		"Sounds #good##punc#",
+		"Wow#punc#",
+		"woo#exc#",
+		"#exc#",
+		"\n#[repeat:#exc#]excbig#"
+	],
+	"hey":["Hey","Yo","Hello","Hi"],
+	"good":["fun","great","good","interesting","cool","educational","enlightening","like my thing"],
+	"punc":["!", ".", "#exc#", " #exc##exc#", " #exc##exc##exc#","#[repeat:#exc#]excbig#"],
+	"exc":["😍", "😘", "❤️", "😱", "😭", "😥", "😅", "😃", "😄", "!"],
+	"excbig":["#repeat##repeat#","#repeat##repeat##repeat#","#repeat##repeat##repeat##repeat#","#repeat##repeat##repeat##repeat##repeat##repeat#"],
+	"hashtag":"\\#Na#segment##segment#Mo#year#",
+	"year":["","2016"],
+	"end": [
+		"a","e","i","o","u","y"
+	],
+	"start": ["#start-1#","#start-2#"],
+	"start-1":["B","C","D","F","G","H","J","K","L","M","N","P","Q","R","S","T","V","W","X","Y","Z"],
+	"start-2":["#start-2h#","#start-2r#","#start-2l#"],
+	"start-2h":["Ch","Sh","Kh","Rh","Ph","Th"],
+	"start-2r":["Cr","Kr","Tr","Wr","Pr","Vr","Br","Zr"],
+	"start-2l":["Cl","Kl","Bl","Sl","Fl","Gl","Ql","Pl"],
+	"segment":["#start##end##"]
+}
