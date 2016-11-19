@@ -10,7 +10,7 @@
 	"wrappers for PICO-8 (text) and SVG (image) sections":[],
 	"P8start":["\\[gfx\\]0808"],
 	"P8end":["\\[/gfx\\]"],
-	"SVGstart":["{svg <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='512' height='512'><g transform='scale(64)'>"],
+	"SVGstart":["{svg <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"512\" height=\"512\" viewBox=\"0 0 512 512\" rendering=\"crispEdges\"><g transform=\"scale(64)\"><rect x=\"0\" y=\"0\" width=\"8\" height=\"8\"/>"],
 	"SVGend":["</g></svg>}"],
 
 	"these set the main 'variables' for the sprite":[],
@@ -37,7 +37,7 @@
 	"hash-escape":["\\#"],
 	"hash-escape-wrapper":["#hash-escape#hash-escape#hash-escape#"],
 	"SVGp":[
-		"<rect x='#x#' y='#y#' style='fill: #hash-escape-wrapper##SVGc#' width='1' height='1'/>"
+		"<rect x=\"#x#\" y=\"#y#\" style=\"fill: #hash-escape-wrapper##SVGc#\" width=\"1\" height=\"1\"/>"
 	],
 
 	"replaces our 'PX' colour codes with hex codes":[],
