@@ -32,7 +32,7 @@
 	"picks randomly from colour selection + BG":[],
 	"c":["#c1#","#c2#","#c3#","P0"],
 	
-	"because of the way the layouts are handled, the hash character needs to be escaped in this funky way or the SVG breaks":[],
+	"a single pixel in the SVG":[],
 	"SVGp":[
 		"<rect x=\"#x#\" y=\"#y#\" style=\"fill: \\##SVGc#\" width=\"1\" height=\"1\"/>"
 	],
