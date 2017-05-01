@@ -4,18 +4,18 @@
 	],
 
 	"output":[
-		"#pronoun.capitalize# #pluralized-verb# #name#'s #subject#."
+		"#pronoun.capitalize# #pluralized-verb# #name#'s #adjective##subject#."
 	],
 
 	"setup":[
 		"#get-verb##get-pronoun#"
 	],
 	"get-verb":[
-		"#wears-pre#[subject:#wears#]",
-		"#speaks-pre#[subject:#speaks#]",
-		"#leads-pre#[subject:#leads#]",
-		"#hunts-pre#[subject:#hunts#]",
-		"#is-pre#[subject:#is#]"
+		"#wears-pre#[a:#bad#][subject:#wears#]",
+		"#speaks-pre#[a:#bad#][subject:#speaks#]",
+		"#leads-pre#[a:#bad#][subject:#leads#]",
+		"#hunts-pre#[a:#good#][subject:#hunts#]",
+		"#is-pre#[a:#bad#][subject:#is#]"
 	],
 	"get-pronoun":[
 		"[pluralized-verb:\\#0\\#][pronoun:he]",
@@ -24,7 +24,10 @@
 		"[pluralized-verb:\\#0\\#][pronoun:that one]",
 		"[pluralized-verb:\\#1\\#][pronoun:they]"
 	],
-
+	"adjective":[
+		"",
+		"#a# "
+	],
 	"name":[
 		"the Devil",
 		"Satan",
@@ -280,5 +283,37 @@
 		"student",
 		"#second# cousin (#twice# removed)"
 	],
-	"second":[ "second","third","fourth"], "twice": ["twice","thrice"]
+	"second":[ "second","third","fourth"], "twice": ["twice","thrice"],
+
+	"bad":[
+		"vile",
+		"villainous",
+		"ignoble",
+		"foul",
+		"evil",
+		"dire",
+		"destitute",
+		"glamorous",
+		"unholy",
+		"despicable",
+		"disastrous",
+		"contemptible",
+		"reprehensible",
+		"devilish",
+		"twisted",
+		"fallen",
+		"dark"
+	],
+	"good":[
+		"brilliant",
+		"noble",
+		"righteous",
+		"holy",
+		"innocent",
+		"pure",
+		"helpless",
+		"harmless",
+		"loyal",
+		"gentle"
+	]
 }
