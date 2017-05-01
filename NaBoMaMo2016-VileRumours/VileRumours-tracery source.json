@@ -187,7 +187,7 @@
 		"[0:keeps company with][1:keep company with]",
 		"[0:makes small-talk with][1:make small-talk with]",
 		"[0:breaks bread with][1:break bread with]",
-		"[0:has tea with][1:has tea with]",
+		"[0:has tea with][1:have tea with]",
 		"[0:bakes cakes for][1:bake cakes for]"
 	],
 	"leads":[
@@ -253,7 +253,7 @@
 		"[0:must #is2# be][1:must #is2# be]",
 		"[0:can be no other but][1:can be no other but]",
 		"[0:shows all the signs of][1:show all the signs of]",
-		"[0:has to be][1:has to be]"
+		"[0:has to be][1:have to be]"
 	],
 	"is2":[
 		"",
