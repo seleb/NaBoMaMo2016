@@ -128,7 +128,8 @@
 		"[0:protects][1:protect]",
 		"[0:shields][1:shield]",
 		"[0:entertains][1:entertain]",
-		"[0:nurses][1:nurse]"
+		"[0:nurses][1:nurse]",
+		"[0:spreads][1:spread]"
 	],
 	"?u":[
 		"u",
@@ -153,7 +154,8 @@
 		"messages",
 		"letters",
 		"signs",
-		"tongue"
+		"tongue",
+		"rumo#?u#rs"
 	],
 	"leads-pre":[
 		"[0:covorts with][1:covort with]",
