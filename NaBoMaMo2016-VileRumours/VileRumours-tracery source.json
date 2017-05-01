@@ -1,17 +1,30 @@
 {
 	"origin": [
-		"#pronoun.capitalize# #main#."
+		"#setup##output#"
 	],
-	"pronoun":[
-		"he","she","it"
+
+	"output":[
+		"#pronoun.capitalize# #pluralized-verb# #name#'s #subject#."
 	],
-	"main": [
-		"#wears-pre# #name#'s #wears#",
-		"#speaks-pre# #name#'s #speaks#",
-		"#leads-pre# #name#'s #leads#",
-		"#hunts-pre# #name#'s #hunts#",
-		"#is-pre# #name#'s #is#"
+
+	"setup":[
+		"#get-verb##get-pronoun#"
 	],
+	"get-verb":[
+		"#wears-pre#[subject:#wears#]",
+		"#speaks-pre#[subject:#speaks#]",
+		"#leads-pre#[subject:#leads#]",
+		"#hunts-pre#[subject:#hunts#]",
+		"#is-pre#[subject:#is#]"
+	],
+	"get-pronoun":[
+		"[pluralized-verb:\\#0\\#][pronoun:he]",
+		"[pluralized-verb:\\#0\\#][pronoun:she]",
+		"[pluralized-verb:\\#0\\#][pronoun:it]",
+		"[pluralized-verb:\\#0\\#][pronoun:that one]",
+		"[pluralized-verb:\\#1\\#][pronoun:they]"
+	],
+
 	"name":[
 		"the Devil",
 		"Satan",
@@ -33,15 +46,15 @@
 		"the Villain"
 	],
 	"wears-pre":[
-		"wears",
-		"styles",
-		"sports",
-		"accessorizes",
-		"carries",
-		"bears",
-		"shows",
-		"dons",
-		"bathes with"
+		"[0:wears][1:wear]",
+		"[0:styles][1:style]",
+		"[0:sports][1:sport]",
+		"[0:accessorizes][1:accessorizes]",
+		"[0:carries][1:carry]",
+		"[0:bears][1:bear]",
+		"[0:shows][1:show]",
+		"[0:dons][1:don]",
+		"[0:bathes with][1:bathe with]"
 	],
 	"wears":[
 		"haircut",
@@ -96,23 +109,31 @@
 		"cuff links"
 	],
 	"speaks-pre":[
-		"speaks",
-		"listens to",
-		"hears",
-		"whispers",
-		"shouts",
-		"writes",
-		"composes",
-		"pictures",
-		"visualizes",
-		"sows",
-		"inks",
-		"pens",
-		"harbors",
-		"protects",
-		"shields",
-		"entertains",
-		"nurses"
+		"[0:speaks][1:speak]",
+		"[0:listens to][1:listen to]",
+		"[0:hears][1:hear]",
+		"[0:whispers][1:whisper]",
+		"[0:shouts][1:shout]",
+		"[0:writes][1:write]",
+		"[0:composes][1:compose]",
+		"[0:pictures][1:picture]",
+		"[0:visuali#zs#es][1:visuali#zs#e]",
+		"[0:sows][1:sow]",
+		"[0:inks][1:ink]",
+		"[0:pens][1:pen]",
+		"[0:harbo#?u#rs][1:harbo#?u#r]",
+		"[0:protects][1:protect]",
+		"[0:shields][1:shield]",
+		"[0:entertains][1:entertain]",
+		"[0:nurses][1:nurse]"
+	],
+	"?u":[
+		"u",
+		""
+	],
+	"zs":[
+		"z",
+		"s"
 	],
 	"speaks":[
 		"words",
@@ -132,42 +153,42 @@
 		"tongue"
 	],
 	"leads-pre":[
-		"covorts with",
-		"associates with",
-		"leads",
-		"carouses with",
-		"minces words with",
-		"shares with",
-		"lobbies for",
-		"controls",
-		"carries",
-		"manages",
-		"heads",
-		"heeds",
-		"helps",
-		"calls upon",
-		"serves",
-		"governs",
-		"helms",
-		"commands",
-		"makes peace with",
-		"offers gifts to",
-		"prays to",
-		"tends to",
-		"shepherds",
-		"supervises",
-		"escorts",
-		"guides",
-		"guards",
-		"protects",
-		"shields",
-		"looks after",
-		"socializes with",
-		"keeps company with",
-		"makes small-talk with",
-		"breaks bread with",
-		"has tea with",
-		"bakes cakes for"
+		"[0:covorts with][1:covort with]",
+		"[0:associates with][1:associate with]",
+		"[0:leads][1:lead]",
+		"[0:carouses with][1:carouse with]",
+		"[0:minces words with][1:mince words with]",
+		"[0:shares with][1:share with]",
+		"[0:lobbies for][1:lobby for]",
+		"[0:controls][1:control]",
+		"[0:carries][1:carry]",
+		"[0:manages][1:manage]",
+		"[0:heads][1:head]",
+		"[0:heeds][1:heed]",
+		"[0:helps][1:help]",
+		"[0:calls upon][1:call upon]",
+		"[0:serves][1:serve]",
+		"[0:governs][1:govern]",
+		"[0:helms][1:helm]",
+		"[0:commands][1:command]",
+		"[0:makes peace with][1:make peace with]",
+		"[0:offers gifts to][1:offer gifts to]",
+		"[0:prays to][1:pray to]",
+		"[0:tends to][1:tend to]",
+		"[0:shepherds][1:shepherd]",
+		"[0:supervises][1:supervise]",
+		"[0:escorts][1:escort]",
+		"[0:guides][1:guide]",
+		"[0:guards][1:guard]",
+		"[0:protects][1:protect]",
+		"[0:shields][1:shield]",
+		"[0:looks after][1:look after]",
+		"[0:socializes with][1:socialize with]",
+		"[0:keeps company with][1:keep company with]",
+		"[0:makes small-talk with][1:make small-talk with]",
+		"[0:breaks bread with][1:break bread with]",
+		"[0:has tea with][1:has tea with]",
+		"[0:bakes cakes for][1:bake cakes for]"
 	],
 	"leads":[
 		"followers",
@@ -198,20 +219,20 @@
 		"party"
 	],
 	"hunts-pre":[
-		"hunts",
-		"attacks",
-		"deceives",
-		"preys on",
-		"falls upon",
-		"manipulates",
-		"assails",
-		"blasts",
-		"besets",
-		"maligns",
-		"vilifies",
-		"lays siege to",
-		"abuses",
-		"censors"
+		"[0:hunts][1:hunt]",
+		"[0:attacks][1:attack]",
+		"[0:deceives][1:deceive]",
+		"[0:preys on][1:prey on]",
+		"[0:falls upon][1:fall upon]",
+		"[0:manipulates][1:manipulate]",
+		"[0:assails][1:assail]",
+		"[0:blasts][1:blast]",
+		"[0:besets][1:beset]",
+		"[0:maligns][1:malign]",
+		"[0:vilifies][1:vilify]",
+		"[0:lays siege to][1:lay seige to]",
+		"[0:abuses][1:abuse]",
+		"[0:censors][1:censor]"
 	],
 	"hunts":[
 		"enemies",
@@ -228,19 +249,19 @@
 		"quarry"
 	],
 	"is-pre":[
-		"is",
-		"must be",
-		"is surely",
-		"can be no other but",
-		"is without a doubt",
-		"shows all the signs of",
-		"is certainly",
-		"is most definitely",
-		"is undoubtedly",
-		"has to be",
-		"is none other than",
-		"is sure to be",
-		"is unmistakably"
+		"[0:is #is2#][1:are #is2#]",
+		"[0:must #is2# be][1:must #is2# be]",
+		"[0:can be no other but][1:can be no other but]",
+		"[0:shows all the signs of][1:show all the signs of]",
+		"[0:has to be][1:has to be]"
+	],
+	"is2":[
+		"",
+		" surely",
+		" without a doubt",
+		" certainly",
+		" most definitely",
+		" unmistakably"
 	],
 	"is":[
 		"child",
@@ -257,7 +278,7 @@
 		"champion",
 		"role model",
 		"student",
-		"#second# cousin, #twice# removed"
+		"#second# cousin (#twice# removed)"
 	],
 	"second":[ "second","third","fourth"], "twice": ["twice","thrice"]
 }
