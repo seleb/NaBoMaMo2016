@@ -18,11 +18,11 @@
 		"#is-pre#[a:#bad#][subject:#is#]"
 	],
 	"get-pronoun":[
-		"[pluralized-verb:\\#0\\#][pronoun:he]",
-		"[pluralized-verb:\\#0\\#][pronoun:she]",
-		"[pluralized-verb:\\#0\\#][pronoun:it]",
-		"[pluralized-verb:\\#0\\#][pronoun:that one]",
-		"[pluralized-verb:\\#1\\#][pronoun:they]"
+		"[pluralized-verb:#0#][pronoun:he]",
+		"[pluralized-verb:#0#][pronoun:she]",
+		"[pluralized-verb:#0#][pronoun:it]",
+		"[pluralized-verb:#0#][pronoun:that one]",
+		"[pluralized-verb:#1#][pronoun:they]"
 	],
 	"adjective":[
 		"",
