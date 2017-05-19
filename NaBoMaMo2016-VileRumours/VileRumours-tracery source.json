@@ -283,7 +283,7 @@
 	],
 	"is-pre":[
 		"[0:is #is2#][1:are #is2#]",
-		"[0:must #is2# be][1:must #is2# be]",
+		"[0:must#is2# be][1:must#is2# be]",
 		"[0:can be no other but][1:can be no other but]",
 		"[0:shows all the signs of][1:show all the signs of]",
 		"[0:has to be][1:have to be]"
